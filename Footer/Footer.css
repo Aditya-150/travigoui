@@ -1,0 +1,38 @@
+*{
+    background-color: #67deb6;
+}
+
+.wra{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.Logo_column{
+    color: rgba(47, 45, 45, 0.815);
+}
+
+
+.About_column{
+    display: flex;
+    justify-content: left;
+    color: rgba(47, 45, 45, 0.815);
+}
+
+
+.Company_column{
+    display: flex;
+    justify-content: left;
+    color: rgba(47, 45, 45, 0.815);
+}
+
+
+.Support_column{
+    color: rgba(47, 45, 45, 0.815);
+}
+
+
+.Get_In_Touch_column{
+    color: rgba(47, 45, 45, 0.815);
+}
+
+
