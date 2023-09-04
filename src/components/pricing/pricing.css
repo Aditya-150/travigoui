@@ -1,0 +1,338 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.pricing-heading h1 {
+  font-size: 3rem;
+  font-family: var(--font-family);
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+.pricing p {
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--light-text-color);
+}
+.pricing-tab {
+  border: 1px solid #c7c7c7;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  padding: 2px;
+}
+.tab-button {
+  background-color: transparent;
+  padding: 0.8rem 1.5rem;
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.tab-button.active {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: 0.4s ease-in;
+}
+.pricing-offer {
+  display: none;
+}
+.pricing-offer.valid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 18rem;
+  margin-top: 0.5rem;
+}
+.pricing-offer img {
+  height: 3.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+.offer {
+  background-color: #ffe6da;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-family);
+  color: var(--tertiary-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 2rem;
+}
+.pricing-plans {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.pricing-plans-standard {
+  padding: 2rem 2rem;
+  justify-content: center;
+  height: 25rem;
+  width: 25rem;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #c7c7c7;
+  margin-right: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+}
+.pricing-plans-standard-header,
+.pricing-plans-premium-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pricing-plans-standard-logo,
+.pricing-plans-premium-logo {
+  background-color: #efd2e9;
+  padding: 0.6rem 0.55rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.pricing-plans-standard-logo img,
+.pricing-plans-premium-logo img {
+  height: 2rem;
+  width: auto;
+}
+.header-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.header-text h1 {
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.header-text p {
+  font-family: var(--font-family);
+  color: var(--light-text-color);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.pricing-plans-standard-price {
+  font-family: var(--font-family);
+  color: #5c5c5c;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.pricing-plans-standard-benefits {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.benefits {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.react-icon {
+  padding: 0.1rem 0.2rem;
+  background-color: #def2eb;
+  border-radius: 50%;
+}
+.benefits p {
+  font-family: var(--font-family);
+  color: #5c5c5c;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+.pricing-plans-standard-button {
+  background-color: transparent;
+  padding: 1rem 4rem;
+  font-family: var(--font-family);
+  color: #5c5c5c;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #5c5c5c;
+  border-radius: 2rem;
+  justify-self: center;
+  align-self: center;
+}
+.pricing-plans-standard-button:hover {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  transition: 0.3s background-color ease-in, 0.3s color ease-in,
+    0.3s border ease-in;
+  cursor: pointer;
+}
+.pricing-plans-premium {
+  padding: 2rem 2rem;
+  justify-content: center;
+  height: 25rem;
+  width: 36rem;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #c7c7c7;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+}
+.pricing-plans-premium-logo {
+  background-color: #f6e4ab;
+}
+.pricing-plans-premium-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pricing-plans-premium-price h1 {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.pricing-plans-premium-price p {
+  font-family: var(--font-family);
+  color: var(--light-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.pricing-plans-premium-benefits {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+  margin-top: 3rem;
+}
+.pricing-plans-premium-button {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 1rem 4rem;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  justify-self: center;
+  align-self: center;
+}
+.pricing-plans-premium-button:hover {
+  color: #5c5c5c;
+  background-color: transparent;
+  border: 2px solid #5c5c5c;
+  transition: 0.2s background-color ease-in, 0.2s color ease-in,
+    0.2s border ease-in;
+  cursor: pointer;
+}
+
+.standard .animation {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 0.5s ease-out;
+  transition-delay: 0.4s;
+  z-index: 1;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.standard .slide-in {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+
+.premium .animation {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: all 0.5s ease-out;
+  transition-delay: 0.4s;
+  z-index: 1;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.premium .slide-in {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+
+@media screen and (max-width: 1090px) {
+  .pricing-plans {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-plans-standard {
+    margin: 0 0 2rem;
+  }
+  .pricing-plans-premium-benefits {
+    grid-template-columns: auto;
+  }
+  .pricing-plans-premium {
+    width: 28rem;
+    height: 35rem;
+  }
+  .pricing-plans-standard {
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .pricing-heading h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pricing-heading h1 {
+    font-size: 1.3rem;
+  }
+  .pricing p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .pricing-plans-standard-logo,
+  .pricing-plans-premium-logo {
+    padding: 0.4rem 0.35rem;
+    margin-right: 0.5rem;
+  }
+  .pricing-plans-standard-logo img,
+  .pricing-plans-premium-logo img {
+    height: 1.3rem;
+  }
+  .pricing-plans-premium,
+  .pricing-plans-standard {
+    width: 20rem;
+    padding: 1.5rem;
+  }
+  .pricing-plans-premium-price h1 {
+    font-size: 1.5rem;
+  }
+  .pricing-plans-premium-price p {
+    font-size: 0.8rem;
+  }
+  .header-text h1 {
+    font-size: 1rem;
+  }
+  .header-text p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .pricing-offer.valid {
+    margin-left: 14rem;
+    margin-top: 0.2rem;
+  }
+  .pricing-offer img {
+    height: 2.5rem;
+    margin-right: 0.5rem;
+  }
+  .offer {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+  }
+}
