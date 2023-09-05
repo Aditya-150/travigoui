@@ -1,4 +1,4 @@
-# Web Dev Project Task 1🚀
+# Web Dev Project🚀
 
 
 [**UI LINK**](https://drive.google.com/file/d/1kaVpUz_MTav0oekKX4749bg48W6TwvED/view?usp=sharing)
