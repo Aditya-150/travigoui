@@ -118,6 +118,7 @@ a:hover {
   display: none;
   margin-left: 1rem;
   position: relative;
+  z-index: 9999;
 }
 .header-menu svg {
   cursor: pointer;
